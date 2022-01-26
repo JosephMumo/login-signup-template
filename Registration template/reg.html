@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container { 
+            width: 80%;
+            height: 90vh;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 1%;
+            background-image: url("pic002.jpg");
+            border-radius: 6px;
+            display: flex;
+        }
+        .image-area {
+            width: 50%;
+            height: 90vh;
+            background-image: url("pic00.jpg");
+            background-size: contain;
+            margin-left: 80vh;
+            backdrop-filter: blur(11px) saturate(100%);
+            -webkit-backdrop-filter: blur(11px) saturate(136%);
+            background-color: rgba(17, 25, 40, 0.12);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.125);
+        }
+        
+        body {
+            background-image: linear-gradient(#815b5A,  #EA9F22);
+            font-family: 'Philosopher', sans-serif;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-left: 15vh;
+            margin-top: 10vh;
+            color: silver;
+        }
+        .aside {
+            margin-left: -65vh;
+            margin-top: -70vh;
+            width: 50vh;
+        }
+        input[type=text] {
+            background-color: #EA9F22;
+            border: 1px #815b5A solid;
+            height: 5vh;
+            width: 50vh;
+            border-radius: 6px;
+            line-height: 10px;
+        }
+        input[type=text]:hover {
+            background-color: #815b5A;
+        } 
+        input[type=email] {
+            background-color: #EA9F22;
+            border: 1px #815b5A solid;
+            height: 5vh;
+            width: 50vh;
+            border-radius: 6px;
+        }
+        input[type=date]:hover {
+            background-color: #815b5A;
+        }
+        input[type=password] {
+            background-color: #EA9F22;
+            border: 1px #815b5A solid;
+            height: 5vh;
+            width: 50vh;
+            border-radius: 6px;
+        }
+        input[type=email]:hover {
+            background-color: #815b5A;
+        }
+        input[type=date] {
+            background-color: #EA9F22;
+            border: 1px #815b5A solid;
+            height: 5vh;
+            width: 50vh;
+            border-radius: 6px;
+        }
+        input[type=password]:hover {
+            background-color: #815b5A;
+        }
+        .input-icons i {
+            position: relative;
+        }      
+        .icon {
+            margin-left: 40vh;
+            margin-top: 10vh;
+            size: 5vh;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image-area">
+            <form>
+                <h3>Sign up</h3>
+                <label>First-Name</label>
+                <input name="firstname" class="input-field" type="text" placeholder="*firstname">
+                <label>Middle-Name</label>
+                <input name="middlename" class="input-field" type="text" placeholder="*middlename">
+                <label>Surname</label>
+                <input class="input-field" type="text" placeholder="*surname">
+                <label>Email</label>
+                <input name="email" type="password" class="email" placeholder="email">
+                <label>Date of Birth</label>
+                <input name="dob" type="date" class="date" placeholder="dob">
+                <label>Password</label>
+                <input name="password" type="password" placeholder="*password">
+                <label>Confirm-Password</label>
+                <input name="c-password" type="password" placeholder="*confirm-password">
+                <p style="align-items: center; font-style: italic; color: rgb(199, 159, 143);">//* Required Field*//</p>
+                <button style="width: 10vh; height: 5vh; background-color: #815b5A; float: right; border-radius: 6px; color: #EA9F22;">Register</button>
+            </form>
+            <form class="aside">
+                <h3>Log in</h3>
+                <p>Already have an account?</p>
+                <label>Email</label>
+                <input name="email" type="email" class="email" placeholder="*email">
+                <label>Password</label>
+                <input name="password" type="password" placeholder="*password">
+                <p style="align-items: center; font-style: italic; color: rgb(199, 159, 143);">//* Required Field*//</p>
+                <button style="width: 10vh; height: 5vh; background-color: #815b5A; float: right; border-radius: 6px; color: #EA9F22;">Log-in</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
